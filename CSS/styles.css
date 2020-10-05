@@ -1,0 +1,415 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#title {
+  background-image: url("https://getdigitalexperts.com/wp-content/uploads/2017/02/computer.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 7.5rem;
+}
+
+.nav-item {
+  margin: 0 14px;
+}
+
+.row {
+  margin-left: 20px;
+}
+
+body {
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+h1 {
+  font-family: 'Aclonica', sans-serif;
+  line-height: 1.5;
+  font-size: 2.3rem;
+  color: #eeeeee;
+}
+
+h2 {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: #222831;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #142850;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+}
+
+.col-photo {
+  margin: auto;
+}
+
+#skills {
+  padding: 3% 15%;
+  background-color: #f7f7f7;
+}
+
+.skill-box {
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+.icon {
+  color: #519872;
+  padding-bottom: 1rem;
+}
+
+#portfolio {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-color: #222831;
+  padding: 4% 10%;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+.carousel-item {
+  padding: 5% 10% 5% 13%;
+  text-align: left;
+}
+
+.project-title {
+  font-family: 'Varta', sans-serif;
+  font-size: 1.5rem;
+  color: #a8d8ea;
+  font-weight: bold;
+}
+
+.project-info {
+  font-size: 1.5rem;
+  color: #f7f7f7;
+  margin-bottom: 10px;
+}
+
+.feauture {
+  font-size: 1.3rem;
+  color: #f7f7f7;
+}
+
+.fab {
+  margin-right: 5px;
+}
+
+.project-link {
+  color: #89c9b8;
+  font-size: 1.1rem;
+}
+
+.project-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bottom-container {
+  text-align: center;
+  background-color: #222831;
+  padding: 10px 0 10px 0;
+}
+
+.copyright {
+  color: #679b9b;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+
+.footer-link {
+  margin: 5px 15px;
+  color: #aacfcf;
+  font-weight: 500;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-link:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.footer-link::before {
+  position: absolute;
+  top: -2px;
+  left: -7px;
+  box-sizing: content-box;
+  padding: 0 5px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #4b5d67;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.footer-link:hover::before {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#contact {
+  background-color: #f7f7f7;
+}
+
+.contact-form {
+  padding-bottom: 5%;
+  width: 70%;
+}
+
+.contact-form .form-control {
+  border-radius: 1rem;
+}
+
+.contact-image {
+  text-align: center;
+}
+
+.contact-image img {
+  border-radius: 6rem;
+  width: 15%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+
+.contact-form h2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #222831;
+}
+
+.btnContact {
+  margin-top: 8px;
+}
+
+@media (max-width: 500px) {
+  #title {
+    padding-bottom: 50px;
+  }
+  #skills {
+    padding: 3% 11%;
+    background-color: #f7f7f7;
+  }
+
+  .navbar {
+    margin-bottom: 3rem;
+  }
+
+  .container-fluid {
+    padding: 3% 10%;
+  }
+
+  .row {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .photo {
+    margin-top: 20px;
+    width: 170px;
+    height: 170px;
+  }
+
+  #portfolio {
+    padding: 7% 3%;
+  }
+
+  .carousel-item {
+    padding: 5% 17% 5% 17%;
+    text-align: left;
+  }
+
+  .carousel-item {
+    text-align: left;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 1.6rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .project-info {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .feauture {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .project-link {
+    text-align: left;
+  }
+
+  .contact-image img {
+    width: 35%;
+    margin-top: -6%;
+  }
+
+  .get-in-touch {
+    font-size: 2.7rem;
+    padding-top: 13px;
+    padding-bottom: 15px;
+  }
+
+  .icon {
+    transform: scale(.85);
+  }
+}
+
+.icon:hover {
+  animation: frame .4s ease-in-out 0.01s 1;
+}
+
+h1, .photo {
+  animation: frame .9s ease-in-out 0s 1;
+}
+
+@keyframes frame {
+  0% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+h2:hover {
+  animation: fr 0.7s linear 0.01s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fr {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+    color: #142850;
+  }
+}
+
+.p-a:hover {
+  animation: fp 0.7s linear 0.01s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fp {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+    color: #f6f6f6;
+  }
+}
+
+.link:hover {
+  animation: fl 0.4s linear 0.01s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fl {
+  100% {
+    color: #142850;
+  }
+}
+
+.project-link:hover {
+  animation: f2 0.4s linear 0.01s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes f2 {
+  100% {
+    color: #e5df88;
+  }
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #f6f6f6;
+  margin-left: 8px;
+}
+
+.social-icon:hover {
+  animation: f3 0.7s linear 0.01s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes f3 {
+  100% {
+    color: #8785a2;
+  }
+}
+
+.card-title {
+  color: #155263;
+}
+
+.card-img-top {
+  height: 200px;
+  width: auto;
+}
+
+.status {
+  color: red;
+}
