@@ -21,7 +21,11 @@ html {
 .row {
   margin-left: 20px;
 }
+code{
 
+  font-size: 1.05rem;
+
+}
 body {
   font-family: 'Baloo Tamma 2', cursive;
 }
@@ -33,6 +37,10 @@ h1 {
   color: #eeeeee;
 }
 
+.work{
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
 h2 {
   font-family: 'Philosopher', sans-serif;
   text-align: center;
@@ -65,18 +73,13 @@ h3 {
 }
 
 #skills {
-  padding: 3% 15%;
+  padding: 3% 15% 1%;
   background-color: #f7f7f7;
 }
 
 .skill-box {
   text-align: center;
   margin-bottom: 1.3rem;
-}
-
-.icon {
-  color: #519872;
-  padding-bottom: 1rem;
 }
 
 #portfolio {
@@ -86,7 +89,7 @@ h3 {
   background-repeat: no-repeat;
   background-attachment: local;
   background-color: #222831;
-  padding: 4% 10%;
+  padding: 3% 10%;
   text-align: center;
   color: #f7f7f7;
 }
@@ -95,26 +98,25 @@ h3 {
   padding: 5% 10% 5% 13%;
   text-align: left;
 }
-
 .project-title {
-  font-family: 'Varta', sans-serif;
-  font-size: 1.5rem;
-  color: #a8d8ea;
-  font-weight: bold;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #fc624d;
+  font-weight: bold;]
 }
 
 .project-info {
-  font-size: 1.5rem;
+  font-size: 1.2rem !important;
   color: #f7f7f7;
   margin-bottom: 10px;
 }
-
 .feauture {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #f7f7f7;
 }
 
-.fab {
+.icon {
+  font-size: 0.9rem;
   margin-right: 5px;
 }
 
@@ -177,7 +179,9 @@ a:hover {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
-
+.sudoku{
+  color: #a6e3e9;
+}
 .footer-link:hover::before {
   opacity: 1;
   -webkit-transform: scale(1.2);
@@ -217,15 +221,21 @@ a:hover {
 
 .btnContact {
   margin-top: 8px;
+  border-radius: 0.3rem;
 }
-
+.automation{
+  margin-bottom: 0;
+}
 @media (max-width: 500px) {
   #title {
     padding-bottom: 50px;
   }
   #skills {
-    padding: 3% 11%;
+    padding: 3% 8% 1%;
     background-color: #f7f7f7;
+  }
+  #portfolio {
+    padding: 3% 0% !important;
   }
 
   .navbar {
@@ -237,12 +247,14 @@ a:hover {
   }
 
   .row {
-    margin-left: 0;
+    margin: 0;
   }
 
   h1 {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+  }
+  .work{
+    font-size: 1.2rem;
   }
 
   h2 {
@@ -261,10 +273,6 @@ a:hover {
     height: 170px;
   }
 
-  #portfolio {
-    padding: 7% 3%;
-  }
-
   .carousel-item {
     padding: 5% 17% 5% 17%;
     text-align: left;
@@ -277,7 +285,7 @@ a:hover {
   }
 
   .project-title {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding-top: 5px;
     padding-bottom: 5px;
   }
@@ -300,24 +308,44 @@ a:hover {
     width: 35%;
     margin-top: -6%;
   }
+  .contact-form{
+    padding-left: 0;
+    padding-left: 0;
+  }
 
   .get-in-touch {
     font-size: 2.7rem;
     padding-top: 13px;
     padding-bottom: 15px;
   }
-
-  .icon {
-    transform: scale(.85);
+  .web{
+    margin-bottom: 3px !important;
   }
 }
+@media (max-width: 992px) {
 
-.icon:hover {
-  animation: frame .4s ease-in-out 0.01s 1;
+  #title {
+    padding-bottom: 50px;
+  }
+  #skills {
+    padding: 3% 8% 1%;
+    background-color: #f7f7f7;
+  }
+
+  #portfolio {
+    padding: 3% 3%;
+  }
+  .web{
+    margin-bottom: 30px;
+  }
+  .navbar {
+    margin-bottom: 2rem;
+  }
+
 }
 
 h1, .photo {
-  animation: frame .9s ease-in-out 0s 1;
+  animation: frame .7s ease-in-out 0s 1;
 }
 
 @keyframes frame {
@@ -342,23 +370,6 @@ h2:hover {
 
   100% {
     transform: scale(1);
-    color: #142850;
-  }
-}
-
-.p-a:hover {
-  animation: fp 0.7s linear 0.01s 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fp {
-  0% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(1);
-    color: #f6f6f6;
   }
 }
 
@@ -385,9 +396,9 @@ h2:hover {
 }
 
 .social-icon {
-  font-size: 1.5rem;
+  font-size: 1.2rem !important;
   color: #f6f6f6;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .social-icon:hover {
@@ -412,4 +423,11 @@ h2:hover {
 
 .status {
   color: red;
+}
+.txt-portfolio{
+  margin-bottom: 10px;
+  color: white;
+}
+.head{
+  margin-bottom: 0;
 }

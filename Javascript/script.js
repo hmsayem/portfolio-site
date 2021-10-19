@@ -1,33 +1,31 @@
 $(document).ready(function() {
   $('.submit').click(function(event) {
-    var name = $('.name').val()
+    var first_name = $('.first-name').val()
+    var last_name = $('.last-name').val()
     var email = $('.email').val()
-    var phone = $('.phone').val()
     var message = $('.message').val()
     var verdict = $('.status')
     verdict.empty()
     verdict.append('<ul> </ul>')
 
-    if (name.length < 3) {
+    if (first_name.length < 2) {
       event.preventDefault()
-      verdict.append('<li>Name is invalid</li>')
+      verdict.append('<li>Invalid name</li>')
     }
-
+    else if (last_name.length < 2) {
+      event.preventDefault()
+      verdict.append('<li>Invalid name</li>')
+    }
     if (email.length > 5 && email.includes('@') && email.includes('.')) {
       console.log('Email is valid')
     } else {
       event.preventDefault()
-      verdict.append('<li>Email is invalid</li>')
-    }
-
-    if (phone.length < 11) {
-      event.preventDefault()
-      verdict.append('<li>Phone number is invalid</li>')
+      verdict.append('<li>Invalid email</li>')
     }
 
     if (message.length < 11) {
       event.preventDefault()
-      verdict.append('<li>Message is invalid</li>')
+      verdict.append('<li>Invalid message</li>')
     }
   })
 })
